@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    width:100vw;
+    
+}
+
+.navBar {
+    background-color: hsl(0, 69%, 64%); 
+    overflow: auto;
+    display: flex; 
+    justify-content: space-evenly; 
+   
+ 
+   
+}
+
+.navBar a {
+    display: block; 
+    color: #000000; 
+    text-align: center; 
+    padding: 14px 0; 
+    text-decoration: none; 
+}
+
+.navBar a:hover {
+    color: hsl(0, 44%, 69%);
+}
+
+/* Style for the logo/image */
+.navBar a img {
+    height: 20px;
+    width: auto; 
+    margin-top: -3px; 
+}
+
+.container {
+    display: flex; /* Use flexbox */
+    width: 100vw;
+    height: 100vh;
+    
+   
+}
+
+.words {
+    width: 50%;
+    background: rgb(184,98,26);
+    background: rgb(186,61,80);
+    background: rgb(186,61,80);
+    background: rgb(216,159,101);
+    background: linear-gradient(90deg, rgba(216,159,101,0.8659942363112392) 0%, rgba(210,117,149,0.8795167725293243) 51%, rgba(223,175,176,1) 100%, rgba(211,142,84,0.21325648414985587) 1150%);
+}
+
+
+.words h1  {
+ margin-top: 100px;
+ margin-left: 50px;
+ font-size: 3em;
+
+}
+.words p{
+    margin-top:50px;
+    margin-left: 60px;
+    margin-right: 50px;
+    font-size: 1.2em;
+
+}
+.words >button{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px 40px ;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(247, 92, 118);
+    border: none;
+    cursor: pointer;
+    
+}
+
+.images1 {
+    width: 50%;
+    background-color: black;
+    height: 100%;
+}
+.images1 img{
+    width: 100%;
+    height:100%;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(184,98,26);
+    background: rgb(186,61,80);
+    background: rgb(186,61,80);
+    background: rgb(216,159,101);
+    background: linear-gradient(90deg, rgba(216,159,101,0.8659942363112392) 0%, rgba(210,117,149,0.8795167725293243) 51%, rgba(223,175,176,1) 100%, rgba(211,142,84,0.21325648414985587) 1150%);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.block,
+.images2 {
+    flex: 1; /* Take equal space */
+    padding: 20px;
+    height: 100%;
+}
+
+
+.images2{
+    width: 50%;
+    height: 100%;
+    padding: 100px 70px ;
+    margin-top: 60px;
+}
+.images2 img{
+    width: 100px;
+    height: 100px;
+}
+.img1 >img{
+    display: flex;
+    width:300px;
+    height: 300px;
+    padding: 10px;
+}
+.img2>img{
+    display: flex;
+    width:300px;
+    height: 300px;
+    padding: 10px;
+}
+.img3>img{
+    display: flex;
+    margin-top: -630px;
+    float: right;
+    margin-right: 30px;
+    width:300px;
+    height: 620px;
+}
+
+.para{
+    background-color: rgb(227, 55, 55);
+    width:80%;
+    height:200px;
+    margin-top: 250px;
+    padding: 25px;
+    
+}
+
+.para >p{
+    font-size: 3em;
+}
+.para > button{
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#arrow{
+    display: block;
+    float: right;
+font-size: 1em;
+margin-left: 10px;
+cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container,
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBar a {
+        padding: 10px 0;
+    }
+    .words {
+        width: 100%;
+    }
+    .words h1 {
+        margin-left: 20px;
+        font-size: 2em;
+    }
+    .words p {
+        margin: 20px;
+        font-size: 1em;
+    }
+    .words button {
+        margin: 20px;
+    }
+    .images1,
+    .images2,
+    .img1,
+    .img2,
+    .img3 {
+        width: 100%;
+    }
+    .images2 {
+        padding: 20px;
+    }
+    .images2 img,
+    .img1 img,
+    .img2 img
+     {
+        width: 30%; 
+        height: 30%;
+        margin-left: 15px; 
+        display: block; 
+    }
+    .img3 img{
+        margin-top: -670px;
+        height: 650px;
+        margin-right: 200px;
+    }
+    .para {
+        margin-top: 40px;
+        width: 90%;
+    }
+    
+   
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    /* Other styles remain unchanged */
+
+    .images2 {
+        padding: 10px;
+    }
+
+    .images2 img,
+    .img1 img,
+    .img2 img
+     {
+        width: 30%; 
+        height: 30%;
+        margin-left: 15px; 
+        display: block; 
+    }
+    
+    .img3 img{
+        margin-top: -400px;
+        height: 380px;
+        margin-right: 100px;
+    }
+
+    .para{
+        background-color: rgb(227, 55, 55);
+        width:40%;
+        height:100px;
+        margin-top: -10px;
+        padding: 25px;
+        display: block;
+        float: right;
+        
+    }
+    
+    .para >p{
+        font-size: 10px;
+        
+    }
+    .para > button{
+        border: none;
+        background-color: transparent;
+        color: black;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    #arrow{
+        display: block;
+        float: right;
+   
+    margin-left: 10px;
+    margin-top: -5px;
+    cursor: pointer;
+    }
+
+
+}
+
+
+   
+
+
+
